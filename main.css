@@ -1,0 +1,93 @@
+
+.section-title{
+    font-size: 20px;
+    text-transform: uppercase;
+    margin: 20px;
+}
+
+.projects{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+.project img {
+  width: 100%;  
+}
+
+.check-all-project{
+display: flex;
+justify-content: center;
+}
+
+.check-all-project button {
+padding: 15px 50px ;
+background-color: var(--background-color);
+color: var(--font-primary-color);
+text-transform: uppercase;
+font-size: 25px;
+margin: 20px 20px;
+border-top: 1px solid var(--font-primary-color);
+border-bottom: 1px solid var(--font-primary-color);
+}
+
+
+
+.blogs{
+    display: flex;
+    gap: 30px;
+}
+
+.blogs img{
+    width: 100%;
+}
+
+.tag{
+    background-color: var(--font-primary-color);
+    color: var(--background-color);
+    width: fit-content;
+    padding: 10px 15px;
+    margin: 10px 10px;
+    border-radius: 20px;
+    font-size: 10px;
+}
+
+.date-name{
+    display: flex;
+    gap: 10px;
+    padding-left: 20px;
+}
+.date{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 10px;
+}
+
+.round-date{
+    width: 10px;
+    height: 10px;
+    background-color: blueviolet;
+    border-radius: 100%;
+}
+.round-name{
+    width: 10px;
+    height: 10px;
+    background-color: blue;
+    border-radius: 100%;
+}
+.date-name-title{
+margin: 20px 20px;
+font-size: 18px;
+}
+
+
+@media only screen and (min-width: 200px) and (max-width: 576px) {
+.projects{
+    grid-template-columns: repeat(1, 1fr);
+}
+.blogs{
+    flex-direction: column;
+}
+
+
+}

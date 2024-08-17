@@ -1,0 +1,108 @@
+
+
+.header-container {
+    background-color: var(--background-color);
+    height: 100%;
+    background-image: url(./images/banner.png) ;
+    background-repeat: no-repeat ;
+    background-position: center top;
+}
+
+.nav {
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px ;
+    font-size: 20px;
+    }
+ #right-menu-icon-id {
+    width: 175px;
+    text-align: right;
+ } 
+
+ .banner-title h1 {
+    font-size: 109px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    letter-spacing: px;
+    margin: 40px 0px;
+
+ }
+
+ .banner-desc {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    margin: 30px 0px;
+ }
+
+ .banner-profile-desc {
+display: flex;
+flex-direction: column;
+justify-content: end;
+font-size: 20px;
+ }
+ .work-icon-container {
+   display: flex;
+   gap: 10px;
+   padding: 20px 0px;
+ }
+
+ .check-icon {
+   width: 20px ;
+   height: 20px;
+ }
+.banner-profile-container {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid var(--font-primary-color);
+    border-bottom: 1px solid var(--font-primary-color);
+}
+
+
+ .banner-image-container {
+background-color: var(--font-primary-color);
+width: fit-content;
+ }
+
+ #banner-image {
+    width: 400px;
+ }
+
+ .complete-project-container {
+   display: flex;
+   justify-content: space-between;
+ }
+.complete-project-card h1 {
+   font-size: 122px;
+   text-transform: uppercase;
+}
+.complete-project-card p {
+   font-size: 20px;
+   text-transform: uppercase;
+}
+
+/* this is query section */
+
+ @media only screen and (min-width: 200px) and (max-width: 576px){
+
+   .container {
+      padding: 0px 0px;
+  }
+ .nav {
+font-size: 16px; 
+  }
+  .complete-project-container {
+   flex-direction: column;
+ } 
+ .banner-image-container {
+width:100% ;
+ }
+.banner-title h1 {
+   font-size: 20px;
+}
+#banner-image {
+   width:100% ;
+}
+ }
+ 
